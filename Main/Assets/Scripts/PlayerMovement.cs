@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         //sets animation parameters
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", grounded);
+        // These 2 lines of code were written completely by me to fix a bug which after jumping, kept the jump animation trigger active
         if (grounded == true)
             anim.SetBool("jump", false);
     }
