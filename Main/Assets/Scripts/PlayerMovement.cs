@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     private void Update()
@@ -76,10 +77,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
+    
 
     private bool isGrounded()
     {
@@ -89,6 +87,12 @@ public class PlayerMovement : MonoBehaviour
     private bool onWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
-        return raycastHit.collider != null; 
+        return raycastHit.collider != null;
+    }
+    
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded();
+
     }
 }
