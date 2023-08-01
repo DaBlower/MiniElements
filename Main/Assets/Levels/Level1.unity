@@ -1737,7 +1737,6 @@ Transform:
   - {fileID: 85917579}
   - {fileID: 1327060999}
   - {fileID: 138306981}
-  - {fileID: 970776231}
   - {fileID: 972006480}
   m_Father: {fileID: 1631663917}
   m_RootOrder: -1
@@ -2254,7 +2253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello, this is level 1, feel free to play around!
+  m_text: Hello, this is the camera update!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2437,6 +2436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+  player: {fileID: 1817309674}
+  cameraDistance: 2.5
+  cameraSpeed: 1
 --- !u!1 &970776230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,8 +2472,8 @@ RectTransform:
   m_Children:
   - {fileID: 786270578}
   - {fileID: 1054705959}
-  m_Father: {fileID: 465867365}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
