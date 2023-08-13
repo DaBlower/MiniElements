@@ -5,6 +5,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
+    private bool dead;
 
     private void Awake()
     {
@@ -20,11 +21,17 @@ public class Health : MonoBehaviour
         {
             // player takes damage
             anim.SetTrigger("hurt");
+            // iframes
         }
         else
         {
-            // player dies
-            anim.SetTrigger("hurt");
+            if (!dead)
+            {
+                // player dies
+                anim.SetTrigger("hurt");
+                GetComponent<PlayerMovement>().enabled = false;
+                dead = true;
+            }
         }
     }
     
