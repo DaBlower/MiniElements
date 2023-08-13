@@ -1030,7 +1030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   player: {fileID: 1817309674}
-  cameraDistance: 2.5
+  aheadDistance: 2
   cameraSpeed: 1
 --- !u!1001 &911325964
 PrefabInstance:
