@@ -28,12 +28,15 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 // player dies
-                anim.SetTrigger("hurt");
+                anim.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
                 dead = true;
             }
         }
     }
     
-
+    public void AddHealth(float _value)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
 }
