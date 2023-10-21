@@ -21,6 +21,18 @@ public class Health : MonoBehaviour
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
+    private void Update()
+    {
+        // Dev use to quickly reset character
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("Revived");
+            dead = false;
+            AddHealth(3);
+            GetComponent<PlayerMovement>().enabled = true;
+            anim.SetTrigger("revive");
+        }
+    }
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
