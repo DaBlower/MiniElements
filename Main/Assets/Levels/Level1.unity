@@ -420,7 +420,7 @@ SpriteRenderer:
   m_SortingLayerID: 1041634983
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2538710101d0f1f4e8976b3495cd1f75, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07da2aeb7aec47c4db757ed3bd1ce2dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -896,7 +896,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00045597553}
+  m_Offset: {x: 0, y: 0.2575361}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -907,7 +907,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 2.4507053}
+  m_Size: {x: 0.09, y: 2.9648657}
   m_EdgeRadius: 0
 --- !u!212 &391121599
 SpriteRenderer:
@@ -2163,7 +2163,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.000002026558}
+  m_Offset: {x: 0, y: 0.07176095}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2174,7 +2174,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.09, y: 1.7244923}
+  m_Size: {x: 0.09, y: 1.8680102}
   m_EdgeRadius: 0
 --- !u!212 &1104160160
 SpriteRenderer:
@@ -2414,6 +2414,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1394007230
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.705
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.364
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4873109078566341392, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614952463878155453, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: startingHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515710898275738275, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
+      propertyPath: m_Name
+      value: MeleeEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8dbdfffd5f813484891952738fbfca57, type: 3}
 --- !u!1 &1424839571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 965763776146757571, guid: 4fd3b2ccb57544d4a87bc1c887e1c7ef, type: 3}
